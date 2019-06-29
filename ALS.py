@@ -119,12 +119,9 @@ user_vecs, item_vecs = implicit_als(data_sparse, iterations=20, features=20, alp
 # FIND SIMILAR ITEMS
 #------------------------------
 
-# Let's find similar artists to Jay-Z. 
-# Note that this ID might be different for you if you're using
-# the full dataset or if you've sliced it somehow. 
-item_id = 10277
+item_id = 10
 
-# Get the item row for Jay-Z
+# Get the item row 
 item_vec = item_vecs[item_id].T
 
 # Calculate the similarity score between Mr Carter and other artists
